@@ -1,0 +1,437 @@
+
+/* HTML */
+html {
+  scroll-behavior: smooth;
+}
+/* BODY */
+body{
+    place-items: center;
+    text-align: center;
+    cursor: default;
+}
+
+/* -- MAIN / NAVIGATE --*/
+.logo{
+    margin-top: 40px;
+    width: 300px;
+    height: auto;
+    
+}
+
+/* -- SCROLL FIX -- */
+#skills, #projects {
+    scroll-margin-top: 100px;
+}
+
+#about {
+    scroll-margin-top: 60px;
+}
+
+#contact{
+    scroll-margin-top: 70px;
+}
+
+.title-description{
+    font-size: 25px;
+    font: bold;
+}
+
+h1, h2 {
+    transition: all 0.3s ease;
+}
+
+h1:hover, h2:hover{
+    text-shadow: 5px 5px 20px rgba(238, 178, 255, 0.8);
+}
+
+
+
+h1{
+
+    font-size: 100px;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    
+}
+
+h2 {
+        font-size: 70px;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+nav{
+    justify-content:center;
+    background-color:aliceblue;
+    position: sticky;
+    top: 0;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+nav {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 15px;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.name {
+    padding-right: 700px;
+    font-size: x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:initial;
+    font-display:swap;
+    font: bold;
+    transition: text-shadow 1s ease;
+
+}
+
+.name:hover{
+    text-shadow: 5px 5px 30px aqua
+}
+
+nav a {
+ 
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative; 
+  text-decoration: none;    
+  color: black;
+  font-size: 17px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: aqua;
+  transform: scaleX(0); 
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+/* -- MAIN / NAVIGATE --*/
+
+/* HOME LINKS */
+#links {
+    place-items: center;
+    display: flex;
+}
+
+#links #links-buttons button {
+    padding: 5%;
+    display: flex;
+    width: 270px;
+    height: 85px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 20px;
+    transition: all 1s ease;
+}
+
+#links #links-buttons button:hover{
+    transform: rotate(-1deg);
+    transform: scale(1.025);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+
+
+
+#links #links-buttons button span {
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+#links #links-buttons .icon {
+    width: 50px;
+    height: 50px;
+    padding-right: 30px;
+    
+}
+
+#links #links-buttons .new-window {
+    padding-left: 3px;
+    width: 25px;
+    height: 25px;
+}
+/* HOME LINKS */
+
+/* -- SKILLS --*/
+
+#skills .skill-boxes {
+    display: flex;
+    
+}
+
+#skills .skill-boxes div {
+
+    margin: 0 10px;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #bd87bd;
+    border-width: 1px;
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+
+}
+
+#skills .skill-boxes div .hr{
+
+    width: 50%;
+}
+
+#skills .skill-boxes div .logo {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-size: 50px;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#skills .skill-boxes div .title{
+    font-size: 20px;
+    margin-top: 10px;
+    font: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#skills .skill-boxes div .description{
+     font: bold;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 20px;
+
+
+}
+
+#skills .skill-boxes div:hover{
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+    transform: translateY(-10px);
+}
+
+/* -- SKILLS --*/
+
+/* Projects */
+
+#projects .projects-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#projects .projects-boxes div{
+    
+    border: 3px solid;
+    border-image: linear-gradient(45deg, rgb(177, 177, 192), #706f7a) 1;
+    background: linear-gradient(135deg, #90909f, rgb(103, 103, 116));
+    padding: 20px;
+    color: white;
+    width: 400px;
+    height: 150px;
+
+    transition: box-shadow 0.4s ease;
+    transition: transform 2s ease;
+
+}
+
+#projects .projects-boxes div:hover{
+    box-shadow: 5px 5px 50px 5px rgb(115, 115, 158);
+    animation: waving 2s infinite;
+}
+
+@keyframes waving {
+
+    0%{
+        transform: translateY(-3px);
+    }
+
+    50%{
+        transform: translateY(3px);
+    }
+
+    100%{
+        transform: translateY(-3px);
+    }
+    
+}
+
+#projects .projects-boxes div .title {
+    color: rgb(23, 23, 23);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#projects .projects-boxes div a img {
+    width: 20px; 
+    height: auto;
+    transition: transform 0.8s ease;
+}
+
+#projects .projects-boxes div a img:hover {
+    transform: translateY(-3px);
+}
+
+#projects .projects-boxes div .hr {
+    width: 50%;
+}
+
+#projects .projects-boxes div .description {
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Projects */
+
+/* About */
+#about pre {
+    font-size: 150%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    white-space: pre-wrap;
+    width: 650px;
+    height: 400px;
+    padding-top: 42.5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 2.5%;
+    border-style: unset;
+    box-shadow: 1px 1px 30px 1px rgba(0,0,0,0.5);
+    transition: all 0.7s ease;
+}
+
+#about pre:hover{
+    box-shadow: 5px 5px 50px 5px rgba(0,0,0,0.5);
+    transform:scale(1.05)
+
+}
+
+/* About */
+
+/* Contact */
+
+#contact {
+    place-items: center;
+}
+
+#contact div {
+    place-items: center;
+    display: flex;
+    width: 120%;
+    height: 125px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 100px 1px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+    margin: 50px;
+}
+
+#contact div:hover{
+    transform: translateY(-7.5px);
+}
+
+#contact div .icon {
+    
+    margin: 20px;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    background-size: 300px;
+    border-radius: 10px;
+    
+
+}
+
+#contact div span {
+
+    padding-bottom: 10px;
+    margin: 10%;
+    margin-right: 20px;
+    font-size: 35px;
+    background: linear-gradient(90deg, #d7a7e7, #7873f5); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+#contact div .copy{
+    transition: transform 0.7s ease;
+    width: 30px;
+}
+
+#contact div .copy:hover{
+    transform: scale(1.13);
+    cursor: pointer;
+}
+
+/* Contact Additional Section */
+.hire-title{
+    margin-bottom: 35px;
+}
+
+.contact-sections{
+    place-items: center;
+    display: inline;
+}
+
+.contact-sections img {
+
+    width: 55px;
+    transition: all 0.4s ease;
+    padding: 1%;
+    margin: 5%;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.contact-sections img:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 50px aqua;
+}
+
+#discord-contact-box,
+#email-contact-box,
+#instagram-contact-box {
+    scroll-margin-top: 100px;
+}
+
+/* Pop-Up Message*/
+footer{
+    position: fixed;
+    left: 525px;
+    right: 0;
+    bottom: 5px;
+    width: 20%;
+    padding: 1%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* Contact */
