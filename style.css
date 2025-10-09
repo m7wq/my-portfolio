@@ -1,4 +1,8 @@
 
+
+/* @media (max-width: 800px) {}  */
+
+
 /* HTML */
 html {
   scroll-behavior: smooth;
@@ -181,7 +185,9 @@ nav a:hover::after {
 
 #skills .skill-boxes {
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px   ;
 }
 
 #skills .skill-boxes div {
