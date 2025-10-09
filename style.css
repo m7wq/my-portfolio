@@ -129,11 +129,13 @@ nav a:hover::after {
 
 /* HOME LINKS */
 #links {
+    margin-top: 3%;
     place-items: center;
     display: flex;
 }
 
 #links #links-buttons button {
+    margin: 3%;
     padding: 5%;
     display: flex;
     width: 270px;
